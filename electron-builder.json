@@ -4,29 +4,27 @@
     "package.json"
   ],
   "extraResources": [
-    "build/icon.ico",
+    "build/logo.ico",
     "servers.json"
   ],
-  "appId": "chat.rocket",
+  "appId": "chat.robot",
   "protocols": {
-    "name": "Rocket.Chat",
+    "name": "CHAT_ROBOT",
     "schemes": [
       "rocketchat"
     ]
   },
   "mac": {
+    "mergeASARs": false,
     "category": "public.app-category.productivity",
     "target": [
-      "dmg",
-      "pkg",
-      "zip",
-      "mas"
+      "dmg"
     ],
-    "icon": "build/icon.icns",
+    "icon": "build/logo.icns",
     "bundleVersion": "111",
     "helperBundleId": "chat.rocket.electron.helper",
     "type": "distribution",
-    "artifactName": "rocketchat-${version}-${os}.${ext}",
+    "artifactName": "ChatRobot-${version}-${os}.${ext}",
     "extendInfo": {
       "NSMicrophoneUsageDescription": "I need access to your microphone to record the audio you want to send.",
       "NSCameraUsageDescription": "I need access to your camera to record the video you want to send.",
@@ -64,7 +62,7 @@
     "asarUnpack": [
       "node_modules"
     ],
-    "artifactName": "rocketchat-${version}-mas.${ext}"
+    "artifactName": "ChatRobot-${version}-mas.${ext}"
   },
   "win": {
     "target": [
@@ -90,14 +88,14 @@
         ]
       }
     ],
-    "icon": "build/icon.ico",
+    "icon": "build/logo.ico",
     "publisherName": "Rocket.Chat Technologies Corp.",
     "legalTrademarks": "",
     "verifyUpdateCodeSignature": true,
     "requestedExecutionLevel": "asInvoker",
     "signAndEditExecutable": true,
     "signDlls": false,
-    "artifactName": "rocketchat-${version}-${os}-${arch}.${ext}"
+    "artifactName": "ChatRobot-${version}-${os}-${arch}.${ext}"
   },
   "nsis": {
     "oneClick": false,
@@ -148,7 +146,7 @@
       "StartupWMClass": "Rocket.Chat",
       "MimeType": "x-scheme-handler/rocketchat"
     },
-    "artifactName": "rocketchat-${version}-${os}-${arch}.${ext}"
+    "artifactName": "ChatRobot-${version}-${os}-${arch}.${ext}"
   },
   "rpm": {
     "fpm": [

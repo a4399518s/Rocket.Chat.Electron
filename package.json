@@ -3,13 +3,13 @@
   "workspaces": [
     "workspaces/*"
   ],
-  "productName": "浩江星灿IM",
-  "name": "IM",
+  "productName": "CHAT_ROBOT",
+  "name": "chat_robot",
   "description": "完美优化版本",
   "version": "3.9.1",
-  "author": "Rocket.Chat Support <support@rocket.chat>",
-  "copyright": "© 2016-2021, Rocket.Chat",
-  "homepage": "https://rocket.chat",
+  "author": "anonymous",
+  "copyright": "© 2016-2021, anonymous",
+  "homepage": "",
   "license": "MIT",
   "keywords": [
     "rocketchat",
@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RocketChat/Rocket.Chat.Electron.git"
+    "url": "git+https://github.com/a4399518s/Rocket.Chat.Electron.git"
   },
   "bugs": {
-    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/issues"
+    "url": "https://github.com/a4399518s/Rocket.Chat.Electron/issues"
   },
   "main": "app/main.js",
   "scripts": {
