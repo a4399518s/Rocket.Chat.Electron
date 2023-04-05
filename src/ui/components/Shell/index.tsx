@@ -36,7 +36,7 @@ export const Shell: FC = () => {
       <GlobalStyles />
       {process.platform === 'darwin' && <WindowDragBar />}
       <Wrapper>
-        <SideBar />
+        {/* <SideBar /> */}
         <ViewsWrapper>
           <ServersView />
           <AddServerView />
