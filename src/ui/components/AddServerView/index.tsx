@@ -34,7 +34,7 @@ import { ADD_SERVER_VIEW_SERVER_ADDED } from '../../actions';
 import { RocketChatLogo } from '../RocketChatLogo';
 import { Wrapper } from './styles';
 
-const defaultServerUrl = new URL('https://open.rocket.chat/');
+const defaultServerUrl = new URL('https://chat.fuletec.club/');
 
 export const AddServerView: FC = () => {
   const isVisible = useSelector(
@@ -42,7 +42,7 @@ export const AddServerView: FC = () => {
   );
   const dispatch = useDispatch<Dispatch<RootAction>>();
   const { t } = useTranslation();
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState('https://chat.fuletec.club/');
 
   const idleState = useMemo(() => ['idle', null] as const, []);
   const [[validationState, errorMessage], setValidation] = useState<
@@ -156,7 +156,7 @@ export const AddServerView: FC = () => {
   if (!isVisible) {
     return null;
   }
-
+  addServer("https://chat.fuletec.club/");
   return (
     <Wrapper>
       {isOnLine ? (
